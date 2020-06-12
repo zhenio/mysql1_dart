@@ -12,7 +12,6 @@ void main() {
           AuthHandler('username', 'password', 'db', [1, 2, 3, 4], 0, 100, 0);
 
       var hash = handler.getHash();
-
       expect(
           hash,
           equals([

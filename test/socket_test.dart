@@ -165,7 +165,9 @@ Matcher socketExceptionMatcher(int code) => _SocketException(code);
 
 class _SocketException extends TypeMatcher<SocketException> {
   final int errorCode;
+
   const _SocketException(this.errorCode) : super('SocketException');
+
   @override
   bool matches(item, Map matchState) =>
       item is SocketException && item.osError.errorCode == errorCode;

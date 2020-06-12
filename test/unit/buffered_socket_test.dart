@@ -21,6 +21,7 @@ class MockSocket extends StreamView<RawSocketEvent> implements RawSocket {
 
   StreamController<RawSocketEvent> _streamController;
   List<int> _data;
+
   @override
   int available() => _data.length;
 
