@@ -6,9 +6,7 @@ part 'integration/nullmap.dart';
 part 'integration/numbers.dart';
 part 'integration/prepared_query.dart';
 part 'integration/stored_procedures.dart';
-
 part 'integration/stream.dart';
-
 part 'integration/two.dart';
 
 void main() {
