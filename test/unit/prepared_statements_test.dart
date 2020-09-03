@@ -1,7 +1,10 @@
 library mysql1.prepared_statements_test;
 
 import 'dart:convert';
+<<<<<<< HEAD
 import 'dart:typed_data';
+=======
+>>>>>>> upstream/master
 
 import 'package:test/test.dart';
 
@@ -210,10 +213,17 @@ void main() {
         0x22,
         0x7d
       ]);
+<<<<<<< HEAD
       var json = {'test': 'test'};
       var field = Field.forTests(FIELD_TYPE_JSON);
       var value = dataPacket.readField(field, buffer);
       expect(value.toString(), equals(jsonEncode(json)));
+=======
+      var j = {'test': 'test'};
+      var field = Field.forTests(FIELD_TYPE_JSON);
+      var value = dataPacket.readField(field, buffer);
+      expect(value, equals(json.encode(j)));
+>>>>>>> upstream/master
     });
     //test FLOAT
     //test DOUBLE
